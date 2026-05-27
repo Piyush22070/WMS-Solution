@@ -175,21 +175,21 @@ namespace WMS.Infrastructure.Migrations
                         new
                         {
                             DepartmentId = 1,
-                            CreatedOn = new DateTime(2026, 5, 26, 9, 3, 33, 844, DateTimeKind.Utc).AddTicks(110),
+                            CreatedOn = new DateTime(2026, 5, 27, 7, 30, 52, 931, DateTimeKind.Utc).AddTicks(9460),
                             DepartmentName = "HR",
                             Description = "Human Resources"
                         },
                         new
                         {
                             DepartmentId = 2,
-                            CreatedOn = new DateTime(2026, 5, 26, 9, 3, 33, 844, DateTimeKind.Utc).AddTicks(110),
+                            CreatedOn = new DateTime(2026, 5, 27, 7, 30, 52, 931, DateTimeKind.Utc).AddTicks(9460),
                             DepartmentName = "Engineering",
                             Description = "Software Engineering"
                         },
                         new
                         {
                             DepartmentId = 3,
-                            CreatedOn = new DateTime(2026, 5, 26, 9, 3, 33, 844, DateTimeKind.Utc).AddTicks(110),
+                            CreatedOn = new DateTime(2026, 5, 27, 7, 30, 52, 931, DateTimeKind.Utc).AddTicks(9460),
                             DepartmentName = "Finance",
                             Description = "Finance & Accounts"
                         });
@@ -475,7 +475,7 @@ namespace WMS.Infrastructure.Migrations
                         new
                         {
                             UserId = 1,
-                            PasswordHash = "$2a$11$4fDQZxeJgoh7qDSnsa8njeLVRDBTlcAC0EfVNMtR.mt1KdsIAosu6",
+                            PasswordHash = "$2a$11$H/bA4uFNufBgaaGW4FOO5.PklDAyW0KQCrpxVrDK4MwPUvLlm3L5G",
                             RoleId = 1,
                             Username = "admin"
                         });
