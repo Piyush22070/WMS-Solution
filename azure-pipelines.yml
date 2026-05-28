@@ -85,7 +85,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Frontend Artifact'
     inputs:
-      PathtoPublish: 'WMS.Frontend/dist/wms-frontend'
+      PathtoPublish: 'WMS.Frontend/dist/wms-frontend/browser'
       ArtifactName: 'frontend'
 
   - task: AzureWebApp@1
@@ -94,4 +94,4 @@ jobs:
       azureSubscription: 'WMS-Azure-Connection'
       appType: 'webAppLinux'
       appName: 'wms-frontend-prod'
-      package: 'WMS.Frontend/dist/wms-frontend'
+      package: 'WMS.Frontend/dist/wms-frontend/browser'
