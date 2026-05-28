@@ -65,7 +65,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular", policy =>
         policy
-            .WithOrigins("http://localhost:4200", "https://localhost:4200","https://wms-frontend-prod-cxaebgcsg8c7brhd.southeastasia-01.azurewebsites.net/")
+            .WithOrigins("http://localhost:4200", "https://localhost:4200","https://wms-frontend-prod-cxaebgcsg8c7brhd.southeastasia-01.azurewebsites.net")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials());
