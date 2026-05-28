@@ -61,7 +61,6 @@ jobs:
       appName: 'wms-api-prod'
       package: '$(Build.ArtifactStagingDirectory)/api/**/*.zip'
 
-# ─── Job 2: Frontend ──────────────────────────────────────
 - job: BuildAndDeployFrontend
   displayName: 'Build & Deploy Angular'
   pool:
@@ -83,14 +82,10 @@ jobs:
       npm run build -- --configuration production
     displayName: 'Build Angular'
 
-  - script: |
-      dir WMS.Frontend\dist
-    displayName: 'Check dist folder'
-
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Frontend Artifact'
     inputs:
-      PathtoPublish: 'WMS.Frontend/dist/wms-frontend/browser'
+      PathtoPublish: 'WMS.Frontend/dist/wms-frontend'
       ArtifactName: 'frontend'
 
   - task: AzureWebApp@1
@@ -99,4 +94,4 @@ jobs:
       azureSubscription: 'WMS-Azure-Connection'
       appType: 'webAppLinux'
       appName: 'wms-frontend-prod'
-      package: 'WMS.Frontend/dist/wms-frontend/browser'
+      package: 'WMS.Frontend/dist/wms-frontend'
